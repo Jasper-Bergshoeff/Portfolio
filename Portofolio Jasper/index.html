@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/6e4f3da2ae.js" crossorigin="anonymous"></script>
+    <title>Portfolio website van Jasper</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software developer</p>
+                <h1>Hallo mijn naam is <span>Jasper</span><br>Bergshoeff</h1>
+            </div>
+        </div>
+    </div>
+   <!---------About me---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/Jasper.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Over mij</h1>
+                    <p>Mijn naam is Jasper Bergshoeff en zit momenteel in mijn laatste jaar van de opleiding
+                        software development. De afgelopen jaren heb ik mij voornamelijk gespecialiseerd tot 
+                        Front end developer. Op dit moment ben ik bezig om een mooi portfolio voor mijzelf te creeren,
+                        om deze te kunnen tonen. Mijn projecten zullen hierop komen te staan zodat je een indruk hebt van mijn kwaliteiten.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link onclick=" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Basis</span><br>Html / Css / Wordpress</li>
+                            <li><span>Frontend</span><br>Angular / Typescript / Javascript</li>
+                            <li><span>Backend</span><br>PHP OOP / SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016 - 2018</span><br>Medewerker ICT op ROC Leiden</li>
+                            <li><span>2020 - 2023</span><br>Software development op MboRijnland</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Diensten-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Wat ik kan</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined">code</span> 
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">crop</span>
+                    <h2>Lorem</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">home_app_logo</span>
+                    <h2>Lorem</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Portfolio--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mijn werk</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/de haarwinkel.jpg">
+                    <div class="layer">
+                        <h3>De haarwinkel</h3>
+                        <p>Een webshop in opdracht van De Haarwinkel</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hobo.jpg">
+                    <div class="layer">
+                        <h3>Hobo</h3>
+                        <p>Een streaming dienst</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/asia-culturecenter-YgFUJ4Ef2EY-unsplash.jpg">
+                    <div class="layer">
+                        <h3>App</h3>
+                        <p>lorem</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Zie meer</a>
+        </div>
+    </div>
+    <!--Contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p> <i class="fas fa-paper-plane"></i>Jasperbergshoeff@hotmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i>06-11494642</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jasper-bergshoeff-a46b84221/"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Jasper-Bergshoeff"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/images/CV Jasper Bergshoeff.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvzoegr" method="post">
+                        <label for="full-name">Volledige naam</label>
+                        <input type="text" name="name" id="full-name" placeholder="Voor en achternaam" required="">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email-adress" required="">
+                        <label for="message">Bericht</label>
+                        <textarea rows="5" name="message" id="message" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                      <button type="submit" class="btn btn2">Verzend</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <p>Portfolio website van Jasper <i class="fas fa-heart"></i></p> 
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
